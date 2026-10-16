@@ -1,9 +1,0 @@
-[submodule "DE_AdventureWorks_Azure_ETL_project"]
-	path = DE_AdventureWorks_Azure_ETL_project
-	url = https://github.com/2003ohith/DE_AdventureWorks_Azure_ETL_project.git
-[submodule "DE_Ecommerce_Azure_ETL_project"]
-	path = DE_Ecommerce_Azure_ETL_project
-	url = https://github.com/2003ohith/DE_Ecommerce_Azure_ETL_project.git
-[submodule "DE_NYC-Taxi-Trip_Azure_ETL_Project"]
-	path = DE_NYC-Taxi-Trip_Azure_ETL_Project
-	url = https://github.com/2003ohith/DE_NYC-Taxi-Trip_Azure_ETL_Project.git
