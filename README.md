@@ -157,4 +157,3 @@ Build an end-to-end Azure Data Engineering pipeline to ingest and transform **32
 
 - **LinkedIn:** [Ohith Prasanna](https://www.linkedin.com/in/ohith-prasanna/)
 
-Thank you for visiting my portfolio! Explore the individual project repositories to learn more about the implementation, data transformation workflows, and technologies used in each project.
