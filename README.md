@@ -98,29 +98,7 @@ Build an end-to-end Azure Data Engineering pipeline that ingests AdventureWorks 
 
 ---
 
-### 🛒 2. Instacart E-commerce Pipeline *(Microsoft Fabric)*
-
-**Objective:**
-
-Design and implement an analytics engineering pipeline that transforms more than 32 million Instacart transaction records into a clean, query-optimized Star Schema for customer purchasing and order analysis.
-
-**Key Highlights:**
-
-- **Hybrid ELT:** Combine Dataflow Gen2 transformations with PySpark notebook processing.
-- **Data Quality:** Apply type casting, data cleansing, and missing-value handling.
-- **Dimensional Modeling:** Prepare fact and dimension datasets for analytical workloads.
-- **Business Analytics:** Develop metrics such as Products Per Order (PPO) and Total Sales where supported by the data model.
-- **Power BI Integration:** Prepare analytical data for dashboarding and business insights using Microsoft Fabric and Power BI.
-
-**Technologies:** Microsoft Fabric, OneLake, Fabric Lakehouse, Dataflow Gen2, PySpark, Delta Lake, Power BI, DAX, and Star Schema modeling.
-
-📂 **[View Instacart Analytics Project](https://github.com/chezhiyan6928/fabric-data-analytics-engineering/tree/main/Instacart-Analytics)**
-
-📄 **[View Reference Dashboard PDF](https://github.com/chezhiyan6928/fabric-data-analytics-engineering/blob/main/Instacart-Analytics/report/RPT_Instacart_Dashboard.pdf)**
-
----
-
-### 🛍️ 3. E-commerce Azure ETL Project
+### 🛍️ 2. E-commerce Azure ETL Project
 
 **Objective:**
 
@@ -140,20 +118,17 @@ Develop an Azure-based data engineering workflow for ingesting, processing, and 
 
 ---
 
-### 🚕 4. NYC Yellow Taxi Trip Azure ETL Project
+### 🚕 3. NYC Yellow Taxi Trip Azure ETL Project
 
 **Objective:**
 
-Build an end-to-end Azure Data Engineering pipeline to ingest and transform NYC Yellow Taxi trip data, producing structured datasets for trip analysis and analytical reporting.
+Build an end-to-end Azure Data Engineering pipeline to ingest and transform **32M+ NYC Yellow Taxi records**, implementing a Lakehouse architecture that produces structured, analytics-ready datasets for trip analysis and reporting.
 
 **Key Highlights:**
 
-- **Data Ingestion:** Work with NYC Yellow Taxi trip datasets and supporting lookup data.
-- **Cloud Storage:** Store source data in Azure Data Lake Storage Gen2.
-- **Data Transformation:** Use PySpark to cleanse, cast, and standardize trip and lookup datasets.
-- **Data Quality:** Handle missing values and normalize selected fields for consistent processing.
-- **Lakehouse Architecture:** Organize data into processing layers and use Delta Lake where implemented.
-- **Analytics Preparation:** Combine and transform trip data for downstream analytical workloads.
+- **End-to-End Lakehouse Architecture:** Implemented a scalable **Medallion Architecture (Bronze/Silver/Gold)** on **Azure Data Lake Storage Gen2**, ingesting and processing **32M+ NYC Taxi records** using Azure Data Factory and PySpark.
+- **Data Engineering & Transformation:** Developed ETL pipelines to cleanse, transform, and validate taxi trip data, applying schema handling and storing processed datasets in **Delta Lake** for reliable downstream analytics.
+- **Analytics Enablement:** Built curated **Gold-layer datasets** to support analysis of taxi trip patterns, revenue, and trip distribution, enabling efficient querying and analytics-ready data for reporting.
 
 **Technologies:** Azure Data Factory, ADLS Gen2, Azure Databricks, PySpark, Delta Lake, Parquet, Unity Catalog, and SQL where implemented.
 
@@ -180,7 +155,6 @@ Build an end-to-end Azure Data Engineering pipeline to ingest and transform NYC 
 
 ## 👤 Connect with Me
 
-- **GitHub:** [2003ohith](https://github.com/2003ohith)
 - **LinkedIn:** [Ohith Prasanna](https://www.linkedin.com/in/ohith-prasanna/)
 
 Thank you for visiting my portfolio! Explore the individual project repositories to learn more about the implementation, data transformation workflows, and technologies used in each project.
