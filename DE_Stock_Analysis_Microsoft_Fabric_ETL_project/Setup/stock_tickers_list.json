@@ -1,0 +1,65 @@
+
+{
+  "stocks": [
+    {
+      "company": "Amazon",
+      "ticker": "AMZN"
+    },
+    {
+      "company": "Apple",
+      "ticker": "AAPL"
+    },
+    {
+      "company": "Microsoft",
+      "ticker": "MSFT"
+    },
+    {
+      "company": "Tesla",
+      "ticker": "TSLA"
+    },
+    {
+      "company": "Nvidia",
+      "ticker": "NVDA"
+    },
+    {
+      "company": "PayPal",
+      "ticker": "PYPL"
+    },
+    {
+      "company": "Meta Platforms",
+      "ticker": "META"
+    },
+    {
+      "company": "Netflix",
+      "ticker": "NFLX"
+    },
+    {
+      "company": "Advanced Micro Devices",
+      "ticker": "AMD"
+    },
+    {
+      "company": "Intel",
+      "ticker": "INTC"
+    },
+    {
+      "company": "Salesforce",
+      "ticker": "CRM"
+    },
+    {
+      "company": "Oracle",
+      "ticker": "ORCL"
+    },
+    {
+      "company": "Walmart",
+      "ticker": "WMT"
+    },
+    {
+      "company": "JPMorgan Chase",
+      "ticker": "JPM"
+    },
+    {
+      "company": "Palantir Technologies",
+      "ticker": "PLTR"
+    }
+  ]
+}
