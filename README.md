@@ -1,7 +1,7 @@
 # 👨‍💻 Data Engineering Portfolio
 
 **Author:** Ohith Prasanna Venugopal  
-**Role:** QA Engineer (BI & ETL Tester) | Aspiring Data Engineer
+**Role:** QA Engineer (BI & ETL Tester) | Aspiring Data Engineer *(Microsoft Fabric/Azure)*
 
 ---
 
@@ -77,7 +77,71 @@ The Medallion Architecture organizes data into three logical layers to support r
 
 ## 🚀 Portfolio Projects
 
-### 🏭 1. AdventureWorks Azure ETL Project
+### 📈 1. Real-Time Stock Market Data Pipeline *(Latest Project)*
+
+**Objective:**  
+Build a fully automated **daily stock market analytics pipeline** on Microsoft Fabric that ingests historical and incremental stock market data from Yahoo Finance, processes it using PySpark, and generates analytics-ready datasets for Power BI reporting.
+
+**Key Highlights:**
+
+- **Incremental Data Processing:** Implemented Delta Lake `MERGE` (Upsert) operations to insert new stock records and update existing records, supporting incremental data processing without requiring full reloads.
+- **Advanced PySpark Transformations:** Applied PySpark transformations and Window functions to calculate daily stock returns, 7-day and 30-day moving averages, volatility, and cumulative returns for time-series analysis.
+- **Medallion Lakehouse Architecture:** Implemented a Bronze, Silver, and Gold architecture in Microsoft Fabric Lakehouse to organize raw Yahoo Finance JSON data, cleansed stock prices, and curated analytical datasets.
+- **Data Quality & Schema Enforcement:** Applied explicit data type casting, null handling, and data validation to maintain consistent stock price datasets across processing layers.
+- **Pipeline Orchestration:** Configured a Microsoft Fabric Data Factory pipeline using Lookup, ForEach, and Copy Data activities to automate ingestion across multiple stock tickers.
+- **Analytics & Forecasting:** Developed Gold-layer datasets for daily stock performance, return-based sentiment classification, and baseline 7-trading-day price forecasting.
+- **Dimensional Modeling:** Designed a **Star Schema** with `FactStocks` (Gold) and `DimCompany`/`DimDate` to support time-series analysis, stock performance reporting, and cross-company comparisons.
+- **Power BI Integration:** Prepared curated Gold-layer datasets for Power BI dashboards to analyze stock price trends, returns, moving averages, volatility, and sentiment across multiple companies.
+
+**Technologies:** Microsoft Fabric, Fabric Data Factory, Fabric Lakehouse, PySpark, Spark Notebooks, Delta Lake, Yahoo Finance API, JSON, SQL, Medallion Architecture, Incremental ETL/ELT, Delta MERGE (Upsert), Window Functions, and Power BI.
+
+📂 **[View Stock Market Analysis – Microsoft Fabric ETL Project](https://github.com/2003ohith/DE_Stock_Analysis_MicrosoftFabric_ETL_project)**
+
+---
+
+### 🚕 2. NYC Yellow Taxi Trip Azure ETL Project *(Advanced Project)*
+
+**Objective:**
+
+Build an end-to-end Azure Data Engineering pipeline to ingest and transform **32M+ NYC Yellow Taxi records**, implementing a Lakehouse architecture that produces structured, analytics-ready datasets for trip analysis and reporting.
+
+**Key Highlights:**
+
+- **End-to-End Lakehouse Architecture:** Implemented a scalable **Medallion Architecture (Bronze/Silver/Gold)** on **Azure Data Lake Storage Gen2**, ingesting and processing **32M+ NYC Taxi records** using Azure Data Factory and PySpark.
+- **Data Engineering & Transformation:** Developed ETL pipelines to cleanse, transform, and validate taxi trip data, applying schema handling and storing processed datasets in **Delta Lake** for reliable downstream analytics.
+- **Analytics Enablement:** Built curated **Gold-layer datasets** to support analysis of taxi trip patterns, revenue, and trip distribution, enabling efficient querying and analytics-ready data for reporting.
+- **Incremental Loading:** Processed NYC Yellow Taxi data using batch processing through Azure Data Factory and PySpark, with Delta Lake **MERGE (UPSERT)** supporting reliable data storage and updates.
+- **Slowly Changing Dimensions (SCD):** Applied SCD Type 1  for overwriting updated records 
+
+**Technologies:** Azure Data Factory, ADLS Gen2, Azure Databricks, PySpark, Delta Lake, Parquet, Unity Catalog, and SQL where implemented.
+
+📂 **[View NYC Yellow Taxi Trip - Azure ETL Project](https://github.com/2003ohith/DE_NYC-Taxi-Trip_Azure_ETL_Project)**
+
+---
+
+### 🛍️ 3. E-commerce Azure ETL Project
+
+**Objective:**
+
+Develop an Azure-based data engineering workflow for ingesting, processing, and transforming e-commerce data into structured datasets suitable for downstream analytics.
+
+**Key Highlights:**
+
+- **Data Ingestion:** Establish a workflow for bringing source data into the data lake.
+- **Cloud Storage:** Use Azure data storage services to organize datasets.
+- **Data Transformation:** Apply data cleansing, standardization, and transformation logic.
+- **Lakehouse Processing:** Structure data for efficient analytical access using the storage formats and processing services implemented in the project.
+- **Analytics Preparation:** Prepare processed data for downstream reporting and business analysis.
+- **Incremental Loading:** Processed Ecommerce data using Stream processing through Azure Data Factory and PySpark, with Delta Lake **MERGE (UPSERT)** supporting reliable data storage and updates.
+- **Slowly Changing Dimensions (SCD):** Applied SCD Type 1  for overwriting updated records 
+
+**Technologies:** Azure Data Factory, ADLS Gen2, Azure Databricks, PySpark, Delta Lake, and SQL where implemented.
+
+📂 **[View E-commerce Azure ETL Project](https://github.com/2003ohith/DE_Ecommerce_Azure_ETL_project)**
+
+---
+
+### 🏭 4. AdventureWorks Azure ETL Project
 
 **Objective:**
 
@@ -95,44 +159,6 @@ Build an end-to-end Azure Data Engineering pipeline that ingests AdventureWorks 
 **Technologies:** Azure Data Factory, ADLS Gen2, Azure Databricks, PySpark, Delta Lake, Parquet, Unity Catalog, Azure Synapse Analytics, and Power BI where implemented.
 
 📂 **[View AdventureWorks Azure ETL Project](https://github.com/2003ohith/DE_AdventureWorks_Azure_ETL_project)**
-
----
-
-### 🛍️ 2. E-commerce Azure ETL Project
-
-**Objective:**
-
-Develop an Azure-based data engineering workflow for ingesting, processing, and transforming e-commerce data into structured datasets suitable for downstream analytics.
-
-**Key Highlights:**
-
-- **Data Ingestion:** Establish a workflow for bringing source data into the data lake.
-- **Cloud Storage:** Use Azure data storage services to organize datasets.
-- **Data Transformation:** Apply data cleansing, standardization, and transformation logic.
-- **Lakehouse Processing:** Structure data for efficient analytical access using the storage formats and processing services implemented in the project.
-- **Analytics Preparation:** Prepare processed data for downstream reporting and business analysis.
-
-**Technologies:** Azure Data Factory, ADLS Gen2, Azure Databricks, PySpark, Delta Lake, and SQL where implemented.
-
-📂 **[View E-commerce Azure ETL Project](https://github.com/2003ohith/DE_Ecommerce_Azure_ETL_project)**
-
----
-
-### 🚕 3. NYC Yellow Taxi Trip Azure ETL Project
-
-**Objective:**
-
-Build an end-to-end Azure Data Engineering pipeline to ingest and transform **32M+ NYC Yellow Taxi records**, implementing a Lakehouse architecture that produces structured, analytics-ready datasets for trip analysis and reporting.
-
-**Key Highlights:**
-
-- **End-to-End Lakehouse Architecture:** Implemented a scalable **Medallion Architecture (Bronze/Silver/Gold)** on **Azure Data Lake Storage Gen2**, ingesting and processing **32M+ NYC Taxi records** using Azure Data Factory and PySpark.
-- **Data Engineering & Transformation:** Developed ETL pipelines to cleanse, transform, and validate taxi trip data, applying schema handling and storing processed datasets in **Delta Lake** for reliable downstream analytics.
-- **Analytics Enablement:** Built curated **Gold-layer datasets** to support analysis of taxi trip patterns, revenue, and trip distribution, enabling efficient querying and analytics-ready data for reporting.
-
-**Technologies:** Azure Data Factory, ADLS Gen2, Azure Databricks, PySpark, Delta Lake, Parquet, Unity Catalog, and SQL where implemented.
-
-📂 **[View NYC Yellow Taxi Trip Azure ETL Project](https://github.com/2003ohith/DE_NYC-Taxi-Trip_Azure_ETL_Project)**
 
 ---
 
